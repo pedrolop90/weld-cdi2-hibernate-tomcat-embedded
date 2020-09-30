@@ -5,6 +5,6 @@ package com.test.cdi.service;
  */
 public interface TestService {
 
-    String getTest();
+    String getTest(Long idPersona);
 
 }

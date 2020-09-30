@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  test-wildfly:
+    build: ./
+    image: test-wildfly:1.0
+    ports:
+      - 8080:8080
+      - 9990:9990
+      - 8009:8009

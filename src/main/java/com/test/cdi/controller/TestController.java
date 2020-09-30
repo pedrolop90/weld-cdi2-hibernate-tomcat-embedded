@@ -1,8 +1,8 @@
 package com.test.cdi.controller;
 
+import com.test.cdi.service.TestService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.test.cdi.service.TestService;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -24,7 +24,7 @@ public class TestController {
     @GET
     public String getTest() {
         logger.info("hello!!");
-        return testService.getTest();
+        return testService.getTest(null);
     }
 
 }
